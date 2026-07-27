@@ -28,14 +28,37 @@ h1 {
     font-family: "Trebuchet MS", Optima; /* Sets the font family of all h1 headings */
     text-align: center; /* Centering all h1 elements */
     margin-top: 3%; /* Adds a small margin above h1 elements */
-    color: #1a1a1a; 
-}
+    color: #1a1a1a;
+   }
+ h2,
+ h3 {
+        color: white;
+        font-family: "Trebuchet MS", Optima;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+ h3 {
+        border-left: 4px solid #4da3ff;
+        padding-left: 10px;
+    }
+
 
 /* Heading 1 element hover effect */
 h1:hover {
     filter: grayscale(5%); /* Adds a slightly gray filter to the h1 headings when hovered over */
     transform: scale(1.1); /* When the h1 elements are hovered over they increase in size by 1.1 */
     transition: transform 1s; /* This causes the transformation to last 1 second */
+}
+
+.Row {
+    transition: 0.3s ease;
+}
+
+.Column_1:hover,
+.Column_2:hover {
+    background-color: #5a5a5a;
+    transition: 0.3s ease;
 }
 
 /* Styling for Portfolio Title Text */
@@ -47,11 +70,12 @@ h1:hover {
 /* Paragraph elements */
 p {
     font-family: Perpetua, Rockwell Extra Bold;
-    text-align: justify; /* This justifies the text within paragraph elements */
-    letter-spacing: .1vw; /* This expands the text slightly */
-    font-size: 2.5vw; /* Relative font sizing equal to 2.5% of the viewport width */
-    padding-left: 1vw; /* Relative padding equal to 1% of the viewport width */
-    padding-right: 1vw; /* Relative padding equal to 1% of the viewport width */
+    text-align: justify;
+    letter-spacing: .1vw;
+    font-size: 1.2vw;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    line-height: 1.6;
 }
 
 /* Paragraph element hover effect */
@@ -191,6 +215,12 @@ footer {
     background-color: darkgray;
 }
 /***** End of Navbar Styling *****/
+
+#About,
+#Projects,
+#GitHub {
+    scroll-margin-top: 80px;
+}
 
 /***** Video Styling *****/
 /* Formatting for background video */
@@ -342,22 +372,78 @@ footer {
 /***** Table Styling -  this section covers the styling of the columns and rows within the table *****/
 * { /*The asterisk is a universal selector that applies this effect to all elements on the page */
     box-sizing: border-box; /* This creates a box with a border within which we will place most of our text */
-} 
-
-.Column_1 {
-    float: left;
-    width: 50%; /* This ensures the column takes up half of the page width */
-    padding: 1.6%;
-    height: 450px; /* This sets the height of the column to 400px -  this may need to be adjusted depending on the text you enter */
-    background-color: #4d4d4d; /* Sets the background color of the left columns */
 }
 
+/***** Table / Section Styling *****/
+
+* {
+    box-sizing: border-box;
+}
+
+.Row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+}
+
+.Column_1,
 .Column_2 {
-    float: left;
     width: 50%;
-    padding: 1.6%;
-    height: 450px;
+    padding: 3%;
     background-color: #4d4d4d;
+    min-height: 450px;
+    height: auto;
+    overflow: visible;
+}
+
+    /* Left and right column hover */
+    .Column_1:hover,
+    .Column_2:hover {
+        background-color: #5a5a5a;
+        transition: 0.3s ease;
+    }
+
+
+    /* Paragraph inside sections */
+    .Column_1 p,
+    .Column_2 p {
+        color: white;
+        font-size: 1.2vw;
+        line-height: 1.8;
+        overflow: visible;
+    }
+
+
+    /* Images inside columns */
+    .Column_2 img,
+    .Column_1 img {
+        max-width: 100%;
+        height: auto;
+    }
+
+
+/* Mobile layout */
+@media screen and (max-width:768px) {
+
+    .Row {
+        display: block;
+    }
+
+    .Column_1,
+    .Column_2 {
+        width: 100%;
+        min-height: auto;
+        height: auto;
+        padding: 5%;
+    }
+
+        .Column_1 p,
+        .Column_2 p {
+            font-size: 4vw;
+            line-height: 1.6;
+        }
 }
 
 /* This inserts something after the content of selected elements (in this case the elements with class "Row") */
@@ -560,3 +646,35 @@ button:hover, .form-container .btn:hover {
     }
 }
 /***** End of Media Query Section *****/
+
+@media screen and (max-width: 768px) {
+
+    .Column_1,
+    .Column_2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .Navbar a {
+        width: 100%;
+        font-size: 4vw;
+        float: none;
+    }
+
+    #Slideshow_Container {
+        width: 90%;
+    }
+
+    .text {
+        font-size: 3vw;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    .Pop_Up_Button {
+        width: 80%;
+        right: 10%;
+    }
+}

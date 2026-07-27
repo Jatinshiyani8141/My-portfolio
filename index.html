@@ -11,14 +11,14 @@
 
     <!--Body-->
     <body class="Background">
-        
+
         <!--Navbar-->
         <div class="Navbar">
             <a class="active" href="#Home">Home</a>
-             <a href="#Slideshow">Slideshow</a>
+            <a href="#Slideshow">Skills</a>
             <a href="#About">About</a>
+            <a href="#Projects">Projects</a>
             <a href="#GitHub">GitHub</a>
-            <!-- Onclick and ondblclick functions added to open and close the contact form -->
             <a onclick="openForm()" ondblclick="closeForm()" class="contact">Contact</a>
         </div>
 
@@ -36,21 +36,22 @@
             <h1 class="white-text">Jatin Shiyani's Portfolio</h1>
             <strong>
                 <p class="center">
-                    <q>Building the web, one pixel at a time.
+                    <q>
+                        Building the web, one pixel at a time.
                         <br>Creativity meets logic.
                         <br>Design. Develop. Deploy.
                     </q>
                     <br>
                     <br> My name is Jatin Shiyani. Welcome to my portfolio website. On it, I will tell you about my background and experience.
                     <br>
-                    <br> Thank you for stopping by and enjoy! 
+                    <br> Thank you for stopping by and enjoy!
                 </p>
             </strong>
         </div>
 
-         <!-- Slideshow section added -->
+        <!-- Slideshow section added -->
         <div id="Slideshow">
-            <div id="Slideshow_Background"> 
+            <div id="Slideshow_Background">
                 <div id="Slideshow_Container">
                     <!-- Slide 1 of 6 -->
                     <div class="mySlides fade">
@@ -59,109 +60,184 @@
                     </div>
                     <!-- Slide 2 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="img/HTML_CSS_and_JavaScript.jpg" alt="HTML, CSS, and JS logos"> 
-                        <div class="text">I am a full-stack software developer,<br> trained in:<br>HTML, CSS, JavaScript,</div>
+                        <img class="Slideshow_Images" src="img/HTML_CSS_and_JavaScript.jpg" alt="HTML, CSS, and JS logos">
+                        <div class="text">Full-Stack Software Developer<br>HTML • CSS • JavaScript</div>
                     </div>
                     <!-- Slide 3 of 6 -->
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="img/Python.png" alt="Python logo">
-                        <div class="text">the popular programming language Python,</div>
+                        <div class="text">
+                            Python Programming<br>
+                            Problem Solving & Automation
+                        </div>
                     </div>
                     <!-- Slide 4 of 6 -->
                     <div class="mySlides fade">
                         <img class="Slideshow_Images" src="img/C_Sharp_and_Dot_NET.png" alt="C# logo">
-                        <div class="text">C#, .NET Framework, ASP.NET, MVC, </div>
+                        <div class="text">
+                            C# • .NET Framework<br>
+                            ASP.NET MVC • Entity Framework
+                        </div>
                     </div>
                     <!-- Slide 5 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="img/SQL_and_Database.png" alt="SQL logo"> 
-                        <div class="text">back end development, databases and SQL.</div>
+                        <img class="Slideshow_Images" src="img/SQL_and_Database.png" alt="SQL logo">
+                        <div class="text">SQL Server • Database Design<br>Back-End Development</div>
                     </div>
                     <!-- Slide 6 of 6 -->
                     <div class="mySlides fade">
-                        <img class="Slideshow_Images" src="img/2.png" alt="Replace with a picture of your choosing"> 
-                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div> 
+                        <img class="Slideshow_Images" src="img/2.png" alt="Replace with a picture of your choosing">
+                        <div class="text"><a class="white-text contact" onclick="openForm()">Contact me now!</a></div>
                     </div>
                     <!-- Previous and next buttons -->
                     <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="Next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
                 <br> <!-- Adds a space between the slideshow images and the dots -->
-
                 <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
                 <div style="text-align: center">
                     <span class="dot" onclick="currentSlide(1)"></span>
                     <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span> 
-                    <span class="dot" onclick="currentSlide(4)"></span> 
-                    <span class="dot" onclick="currentSlide(5)"></span> 
-                    <span class="dot" onclick="currentSlide(6)"></span> 
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                    <span class="dot" onclick="currentSlide(5)"></span>
+                    <span class="dot" onclick="currentSlide(6)"></span>
                 </div>
             </div>
         </div>
 
         <!--About section-->
         <div class="Row" id="About">
-            <!--Left column-->
-            <div class="Column_2"> 
-                    <img src="img/1.png" alt="Replace with your own image and description">
+
+            <div class="Column_2">
+                <img src="img/1.png" alt="Jatin Shiyani">
             </div>
-            <!--Right column-->
+
             <div class="Column_1">
-                <h1>About</h1>
+                <h1>About Me</h1>
+
                 <p>
-                    I am a software developer with a love for coding and continuous learning.
-                    <br>
-                    <br>I am a graduate of <a href="https://www.learncodinganywhere.com" target="_blank">The Tech Academy</a>’s Software Developer Boot Camp, and trained and experienced in the following web and programming languages: HTML, CSS, JavaScript, SQL, C# and more. 
-                    <br>
-                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#Contact">Contact</a> me below!
+                    Hello! I'm <strong>Jatin Shiyani</strong>, a Full-Stack Software Developer passionate about creating modern web applications and solving real-world problems through technology.
+
+                    <br><br>
+
+                    I graduated from
+                    <a href="https://www.learncodinganywhere.com" target="_blank">
+                        The Tech Academy's Software Developer Boot Camp
+                    </a>,
+                    where I built projects using HTML, CSS, JavaScript, Python, SQL, C#, ASP.NET MVC, .NET Framework, and Entity Framework. During the program I gained experience building responsive websites, database-driven applications, and object-oriented software solutions.
+
+                    <br><br>
+
+                    I enjoy learning new technologies and creating clean, user-friendly applications that solve real-world problems.
+
+                    <br><br>
+
+                    I am currently seeking opportunities as a Software Developer where I can continue learning while contributing to meaningful projects.
                 </p>
+
             </div>
+
         </div>
 
-        <!--GitHub section-->
-        <div class="Row" id="GitHub">
-            <!--Left column-->
+        <!--Project Section-->
+
+        <div class="Row" id="Projects">
+
             <div class="Column_1">
-                <h1>GitHub</h1>
+
+                <h1>Projects</h1>
+
+                <h3>🚗 Car Insurance MVC Application</h3>
+
                 <p>
-                    You can view my coding projects on my GitHub profile here:
-                    <br>
-                    <p class="center"><a href="https://github.com/Jatinshiyani8141" target="_blank">Jatin Shiyani GitHub</a></p>
+                    Built an ASP.NET MVC web application that calculates insurance quotes using business logic. Includes an administrator dashboard for viewing customer quotes.
                 </p>
+
+                <h3>🏈 NFL Stats Application</h3>
+
+                <p>
+                    Developed an ASP.NET MVC application using Entity Framework 6 Code First to manage and display statistics for fantasy football.
+                </p>
+
+                <h3>🃏 Blackjack Game</h3>
+
+                <p>
+                    Created a C# console application demonstrating object-oriented programming, classes, inheritance, collections, and game logic.
+                </p>
+
             </div>
-            <!--Right column-->
+
             <div class="Column_2">
-                <a href="https://github.com/the-tech-academy" target="_blank"><img src="img/GitHub.png" alt="GitHub Logo"></a>
+
+                <img src="img/C_Sharp_and_Dot_NET.png" alt="C# and .NET">
+
             </div>
+
+        </div>
+
+        <!--GitHub Section-->
+
+        <div class="Row" id="GitHub">
+
+            <div class="Column_1">
+
+                <h1>GitHub</h1>
+
+                <p>
+                    Explore my software development projects on GitHub, including ASP.NET MVC applications, C# console applications and Entity Framework projects.
+                </p>
+
+                <p class="center">
+
+                    <a href="https://github.com/Jatinshiyani8141" target="_blank">
+                        Visit My GitHub Profile
+                    </a>
+
+                </p>
+
+            </div>
+
+            <div class="Column_2">
+
+                <a href="https://github.com/Jatinshiyani8141" target="_blank">
+                    <img src="img/GitHub.png" alt="GitHub">
+                </a>
+
+            </div>
+
         </div>
 
         <!--Contact section-->
         <div id="Contact">
-           <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
-           <div class="form-popup" id="myForm">
-                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container"> <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/info@learncodinganywhere.com" method="POST" class="form-container">
+                    <!-- Here we are using a free online service from https://formspree.io/ to send our contact form to an email address of our choosing - note: it will not run unless live on the internet, you have to push it to your online website first -->
                     <h1>Contact</h1>
                     <label for="name"><b>Name</b></label>
-                      <input type="text" placeholder="Type your name here" name="name" required>
+                    <input type="text" placeholder="Type your name here" name="name" required>
                     <label for="phone"><b>Phone</b></label>
-                      <input type="text" placeholder="Type your phone number here" name="phone">
-                    <label for="email"><b>Email</b></label>		
-                      <input type="text" placeholder="Type your email address here" name="email" required>
+                    <input type="text" placeholder="Type your phone number here" name="phone">
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Type your email address here" name="email" required>
                     <label for="message"><b>Message</b></label>
-                      <input type="text" placeholder="Type your message here" name="message">
-         
+                    <input type="text" placeholder="Type your message here" name="message">
+
                     <button type="submit" class="btn">SUBMIT</button>
                     <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
-           </div>
+            </div>
         </div>
 
         <!--Footer section-->
         <footer>
-            <p>
-                <p class="center">&copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
-                <br>
+            <p class="center">
+                © 2026 Jatin Shiyani |
+                Built with HTML, CSS & JavaScript |
+                <a href="https://www.learncodinganywhere.com/" target="_blank">
+                    The Tech Academy
+                </a>
             </p>
         </footer>
         <script src="js/main.js"></script>
